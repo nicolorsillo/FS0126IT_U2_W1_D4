@@ -1,0 +1,89 @@
+body {
+  font-family: "Indie Flower";
+  background-color: #666666;
+}
+
+h1 {
+  font-size: 3em;
+  font-weight: 800;
+}
+
+p {
+  font-size: 2em;
+}
+
+#postit-1,
+#postit-5,
+#postit-7 {
+  background: #dbdbc5;
+  background: linear-gradient(
+    0deg,
+    rgba(219, 219, 197, 1) 0%,
+    rgba(250, 251, 205, 1) 55%
+  );
+}
+main div:nth-of-type(1),
+main div:nth-of-type(5),
+main div:nth-of-type(7) {
+  transform: rotateZ(-8deg);
+}
+
+#postit-2,
+#postit-4,
+#postit-8 {
+  background: #bec7bd;
+  background: linear-gradient(
+    0deg,
+    rgba(190, 199, 189, 1) 0%,
+    rgba(211, 251, 207, 1) 55%
+  );
+}
+main div:nth-of-type(2),
+main div:nth-of-type(4),
+main div:nth-of-type(8) {
+  transform: rotateZ(7deg);
+}
+
+#postit-3,
+#postit-6 {
+  background: #a7a7b8;
+  background: linear-gradient(
+    0deg,
+    rgba(167, 167, 184, 1) 0%,
+    rgba(200, 200, 245, 1) 55%
+  );
+}
+
+main div:nth-of-type(3),
+main div:nth-of-type(6) {
+  transform: rotateZ(-5deg);
+}
+
+main div div:nth-of-type(1) {
+  transform: rotateZ(0deg);
+}
+main {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 5em;
+}
+
+.postit {
+  width: 16em;
+  height: 17.5em;
+  box-shadow: 0.5em 0.75em 1.75em 0.5em rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  align-items: start;
+  padding-left: 4em;
+  transition: transform 2s linear 0;
+}
+
+.postit:hover {
+  transform: rotateZ(0deg) scale(1.2);
+}
